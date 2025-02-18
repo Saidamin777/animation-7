@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+}
+
+.box {
+    width: 120px;
+    height: 60px;
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    animation: waveMove 2s ease-in-out infinite;
+}
+
+@keyframes waveMove {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(30px) rotate(10deg);
+    }
+    50% {
+        transform: translateX(0) rotate(0deg);
+    }
+    75% {
+        transform: translateX(-30px) rotate(-10deg);
+    }
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
